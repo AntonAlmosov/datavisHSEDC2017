@@ -1,0 +1,49 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+  <title>Document</title>
+</head>
+<body style="background-color: black;">
+  <div style="width:90%; height:40%;">
+  <canvas id="myChart">
+  <script>
+    var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    var year2016 = [4590,3967,4892,4672,4902,4530,5250,5527,4937,5251,5092,5153];
+    var ctx = document.getElementById("myChart");
+    var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: MONTHS,
+            datasets: [{
+                label: 'incidents',
+                data: year2016,
+                color: 'rgba(255,255,255,1)',
+                backgroundColor: '255,255,255,0.1',
+                borderColor: 'rgba(255,255,255,1)',
+                borderWidth: 3,
+                pointBackgroundColor: 'rgba(255,255,255,1)',
+                bodyFontSize: 20
+            }]
+        },
+        options: {
+            scales: {
+              display: false,
+              scaleLabel:[{
+                display: false
+              }],
+                gridLines:[{
+                  color: 'rgba(255,255,255,1)'
+                }],
+                tick:[{
+                  fontColor: 'rgba(255,255,255,1)',
+                  fontSize: 20
+                }]
+            }
+        }
+    });
+  </script>
+</body>
+</html>

@@ -72,13 +72,30 @@ header {
   -ms-flex-align: center;
   align-items: center; }
   header a {
-    text-decoration: none;
     color: white;
     font-size: 20px;
-    font-family: sans-serif;
-    padding-right: 50px; }
-    header a:hover {
-      text-decoration: underline; }
+    font-family: "GT America Mono Trial";
+    margin-left: 50px;
+    text-decoration: none;
+    position: relative; }
+    header a::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+      transform: scaleX(0);
+      background-color: white;
+      -webkit-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      transition: all .3s ease; }
+    header a:hover::after {
+      -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+      transform: scaleX(1); }
 
 .intro {
   margin-top: 275px; }
@@ -117,16 +134,51 @@ header {
         text-decoration: none;
         color: #E9B0D6;
         font-family: "GT America Mono Trial";
-        font-size: 20px; }
-        .intro .introBlock .introBlockInner a:hover {
-          text-decoration: underline; }
+        font-size: 20px;
+        position: relative; }
+        .intro .introBlock .introBlockInner a::after {
+          content: '';
+          position: absolute;
+          bottom: 47px;
+          left: 0;
+          width: 100%;
+          height: 3px;
+          -webkit-transform: scaleX(0);
+          -ms-transform: scaleX(0);
+          transform: scaleX(0);
+          background-color: #E9B0D6;
+          -webkit-transition: all .3s ease;
+          -o-transition: all .3s ease;
+          transition: all .3s ease; }
+        .intro .introBlock .introBlockInner a:hover::after {
+          -webkit-transform: scaleX(1);
+          -ms-transform: scaleX(1);
+          transform: scaleX(1); }
     .intro .introBlock .introGitHub {
+      display: inline;
       text-decoration: none;
       color: white;
       font-family: "GT America Mono Trial";
-      font-size: 20px; }
-      .intro .introBlock .introGitHub:hover {
-        text-decoration: underline; }
+      font-size: 20px;
+      position: relative; }
+      .intro .introBlock .introGitHub::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 30%;
+        height: 3px;
+        -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+        transform: scaleX(0);
+        background-color: white;
+        -webkit-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease; }
+      .intro .introBlock .introGitHub:hover::after {
+        -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        transform: scaleX(1); }
 
 .year {
   margin-top: 126px;
@@ -161,9 +213,6 @@ header {
     margin: 70px auto 0 auto;
     width: 100%;
     height: 577px; }
-    .year .yearGraph img {
-      width: 100%;
-      height: 100%; }
   .year .yearEnding {
     margin-top: 100px;
     height: 200px;
@@ -184,9 +233,26 @@ header {
       text-decoration: none;
       font-family: "GT America Mono Trial";
       font-size: 20px;
-      color: white; }
-      .year .yearEnding a:hover {
-        text-decoration: underline; }
+      color: white;
+      position: relative; }
+      .year .yearEnding a::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+        transform: scaleX(0);
+        background-color: white;
+        -webkit-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease; }
+      .year .yearEnding a:hover::after {
+        -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        transform: scaleX(1); }
 
 .footer h1 {
   width: 520px;

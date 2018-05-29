@@ -5,14 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HSE DC 2018 VISUALISATION</title>
   <script type="text/javascript" src="js/Chart.bundle.min.js"></script>
-  <script type="text/javascript" src="js/script.js"></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="wrapper">
     <!-- //header -->
     <header>
-      <a href="">2016</a>
+      <a href="" class="link">2016</a>
       <a href="">2017</a>
       <a href="">summary</a>
     </header>
@@ -45,7 +44,43 @@
       </div>
 
       <div class="yearGraph">
-        <img src="img/graph1.png" alt="">
+        <canvas id="year2016annual"></canvas>
+        <script>
+          var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+          var year2016 = [4590,3967,4892,4672,4902,4530,5250,5527,4937,5251,5092,5153];
+          var ctx = document.getElementById("year2016annual");
+          var myChart = new Chart(ctx, {
+              type: 'line',
+              data: {
+                  labels: MONTHS,
+                  datasets: [{
+                      label: 'incidents',
+                      data: year2016,
+                      color: 'rgba(255,255,255,1)',
+                      backgroundColor: '255,255,255,0.1',
+                      borderColor: 'rgba(255,255,255,1)',
+                      borderWidth: 3,
+                      pointBackgroundColor: 'rgba(255,255,255,1)',
+                      bodyFontSize: 20
+                  }]
+              },
+              options: {
+                  scales: {
+                    display: false,
+                    scaleLabel:[{
+                      display: false
+                    }],
+                      gridLines:[{
+                        color: 'rgba(255,255,255,1)'
+                      }],
+                      tick:[{
+                        fontColor: 'rgba(255,255,255,1)',
+                        fontSize: 20
+                      }]
+                  }
+              }
+          });
+        </script>
       </div>
 
       <div class="yearEnding reversed">
@@ -72,7 +107,43 @@
       </div>
 
       <div class="yearGraph">
-        <img src="img/graph2.png" alt="">
+        <canvas id="year2017annual"></canvas>
+        <script>
+          var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+          var year2016 = [4590,3967,4892,4672,4902,4530,5250,5527,4937,5251,5092,5153];
+          var ctx = document.getElementById("year2017annual");
+          var myChart = new Chart(ctx, {
+              type: 'line',
+              data: {
+                  labels: MONTHS,
+                  datasets: [{
+                      label: 'incidents',
+                      data: year2016,
+                      color: 'rgba(255,255,255,1)',
+                      backgroundColor: '255,255,255,0.1',
+                      borderColor: 'rgba(255,255,255,1)',
+                      borderWidth: 3,
+                      pointBackgroundColor: 'rgba(255,255,255,1)',
+                      bodyFontSize: 20
+                  }]
+              },
+              options: {
+                  scales: {
+                    display: false,
+                    scaleLabel:[{
+                      display: false
+                    }],
+                      gridLines:[{
+                        color: 'rgba(255,255,255,1)'
+                      }],
+                      tick:[{
+                        fontColor: 'rgba(255,255,255,1)',
+                        fontSize: 20
+                      }]
+                  }
+              }
+          });
+        </script>
       </div>
 
       <div class="yearEnding">
