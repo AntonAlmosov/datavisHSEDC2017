@@ -1,0 +1,177 @@
+@import "reset";
+body{
+  background-color: #111111;
+}
+.wrapper{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#alignLeft{
+  text-align: left;
+}
+#alignRight{
+  text-align: right;
+}
+
+
+header{
+  margin-top: 56px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding-right: 50px;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+.intro{
+  margin-top: 275px;
+  h1{
+    font-family: "GT America Mono Trial";
+    font-size: 58px;
+    color: white;
+  }
+  .introBlock{
+    margin-left: 360px;
+    width: 701px;
+    height: 200px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    .introBlockInner{
+      margin-top: 72px;
+      display: flex;
+      justify-content: space-between;
+      p{
+        line-height: 1.2;
+        font-family: "GT America Mono Trial";
+        font-size: 20px;
+        color: white;
+      }
+      a{
+        text-decoration: none;
+        color: #E9B0D6;
+        font-family: "GT America Mono Trial";
+        font-size: 20px;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+    .introGitHub{
+      text-decoration: none;
+      color: white;
+      font-family: "GT America Mono Trial";
+      font-size: 20px;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
+.year{
+  margin-top: 126px;
+  margin-bottom: 350px;
+  &:last-of-type{
+    margin-bottom: 229px;
+  }
+  h1{
+    font-family: "GT America Mono Trial";
+    font-size: 30px;
+    color: white;
+  }
+
+  .yearImgBlock{
+    margin-top: 56px;
+    display: flex;
+    justify-content: space-between;
+    img{
+      width: 696px;
+      height: 349px;
+    }
+    .yearImgBlockText{
+      margin-top: 77px;
+      width: 325px;
+      p{
+        margin-bottom: 68px;
+        line-height: 1.2;
+        font-family: "GT America Mono Trial";
+        font-size: 20px;
+        color: white;
+      }
+    }
+  }
+
+  .yearGraph{
+    margin: 70px auto 0 auto;
+    width: 100%;
+    height: 577px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .yearEnding{
+    margin-top: 100px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    p{
+      width: 679px;
+      line-height: 1.2;
+      font-family: "GT America Mono Trial";
+      font-size: 20px;
+      color: white;
+    }
+    a{
+      margin-top: 175px;
+      text-decoration: none;
+      font-family: "GT America Mono Trial";
+      font-size: 20px;
+      color: white;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.footer{
+  h1{
+    width: 520px;
+    font-family: "GT America Mono Trial";
+    font-size: 30px;
+    color: #E9B0D6;
+    letter-spacing: -0.4px;
+  }
+  .credits{
+    margin-top: 43px;
+    margin-bottom: 280px;
+    display: flex;
+    p{
+      font-family: "GT America Mono Trial";
+      font-size: 20px;
+      color: #E9B0D6;
+      padding-right: 178px;
+      line-height: 2;
+    }
+  }
+}
+
+
+.reversed{
+  flex-flow: row-reverse;
+}
